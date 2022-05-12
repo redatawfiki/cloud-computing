@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <title>Hangman API - Add new word</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Word</th>
+                <th>Play counts</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in db %}
+                <tr>
+                    <td>{{ row['words'] }}</td>
+                    <td>{{ row['counts'] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
