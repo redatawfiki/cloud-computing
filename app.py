@@ -1,17 +1,8 @@
 from flask import Flask, render_template
-#import pandas as pd
 
 app = Flask(__name__)
 
-#hangman functions
-
-# def create_dataframe():
-#     base_words = ['chien','chat','voiture']
-#     base_counts = [0] * len(base_words)
-#     df = pd.DataFrame(list(zip(base_words, base_counts)), columns = ['words','counts'])
-#     return df
-
-# df = create_dataframe()
+#db functions
 
 def create_db():
     base_words = ['chien','chat','voiture']
