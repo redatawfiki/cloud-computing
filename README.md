@@ -6,8 +6,13 @@ The files in this repository should be (at least) :
 - README.md
 - Dockerfile
 - app.py
-- index.html
-- style.css
+- templates
+    - index.html
+    - play.html
+    - db.html
+- static
+    - css
+        - style.css
 - requirements.txt
 - .gitignore
 
